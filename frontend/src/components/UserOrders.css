@@ -1,0 +1,96 @@
+
+
+.user-orders-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-orders-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.orders-table th, .orders-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    color: #fff;
+}
+
+.orders-table th {
+    background-color: #333;
+    font-weight: bold;
+}
+
+.orders-table td {
+    background-color: #2a2a2a;
+}
+
+.orders-table tr:hover {
+    background-color: #444;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:disabled {
+    background-color: #777;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.deletee-order-btn {
+    background-color: #f44336; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.deletee-order-btn:hover {
+    background-color: #e53935; 
+    transform: scale(1.05); 
+}
+
+.deletee-order-btn:active {
+    background-color: #d32f2f; 
+    transform: scale(0.98); 
+}
+
+.deletee-order-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(244, 67, 54, 0.4); 
+}

@@ -1,0 +1,108 @@
+.payment-page {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  padding: 2rem;
+}
+
+.payment-form {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.payment-section {
+  margin-bottom: 1.5rem;
+}
+
+.payment-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.payment-section input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.payment-methods {
+  margin-top: 1.5rem;
+}
+
+.payment-methods h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.brands {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.brand-iicon {
+  font-size: 2rem;
+  color: #333;
+}
+
+.payment-methods-radio label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.payment-methods-radio input {
+  margin-right: 10px;
+}
+
+.pay-button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.pay-button:hover {
+  background: #555;
+}
+
+.processing-animation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.processing-animation video {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.processing-animation p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.payment-success {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.payment-success p {
+  font-size: 1.5rem;
+  color: #28a745;
+  margin-top: 1rem;
+}

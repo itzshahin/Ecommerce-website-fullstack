@@ -1,0 +1,298 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.shop {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.shopTitle {
+  text-align: center;
+  margin: 50px 0 0;
+}
+
+.logo-container {
+  text-align: center;
+  margin-top: -80px;
+}
+
+.logo {
+  max-width: 900px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.large-logo-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 3s;
+}
+
+.large-logo {
+  max-width: 80%;
+  height: auto;
+}
+
+.new-arrivals {
+  text-align: center;
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #ececec;
+  color: rgb(84, 81, 81);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.new-arrivals h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.new-arrivals p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.product {
+  position: relative;
+  background-color: black;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  width: calc(20% - 20px);
+  box-sizing: border-box;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  background-color: #000000;
+}
+
+.product-img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-img-front,
+.product-img-back {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.product-img-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.product:hover .product-img-front {
+  opacity: 0;
+}
+
+.product:hover .product-img-back {
+  opacity: 1;
+}
+
+.description {
+  padding: 15px;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+}
+
+.description p {
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.description p b {
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.addToCartBttn,
+.buyNowBttn,
+.addToWishlistBttn {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+}
+
+.addToCartBttn.in-cart {
+  background-color: red; 
+  color: white; 
+}
+.addToWishlistBttn.in-wishlist {
+  background-color: rgb(15, 14, 14);
+  border: none;
+  color: white;
+}
+
+.addToWishlistBttn:hover,
+.addToCartBttn:hover,
+.buyNowBttn:hover {
+  background-color: #f0f0f0;
+}
+
+.addToWishlistBttn {
+  color: #ff0000;
+}
+
+.addToCartBttn.in-cart {
+  background-color: red;
+}
+
+.addToCartBttn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.buyNowBttn {
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buyNowBttn:hover {
+  background-color: #e64a19;
+  transform: scale(1.05);
+}
+
+.buyNowBttn:active {
+  background-color: #d84315;
+  transform: scale(1);
+}
+
+@media (max-width: 1024px) {
+  .product {
+    width: calc(33.333% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    width: calc(50% - 20px);
+  }
+
+  .shopTitle h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    width: calc(100% - 20px);
+  }
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.custom-carousel {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.custom-carousel .carousel .slide img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.no-products-message {
+  font-family: inherit;
+  font-size: 54px;
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.brands-section {
+  color: #ececec;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.brands {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-icon {
+  font-size: 120px;
+  margin: 0 15px;
+  color: #fff;
+}
+
+.in-stock {
+  color: green; /* Green color for in-stock items */
+  font-weight: bold; /* Bold text */
+}
+
+.low-stock {
+  color: orange; /* Orange color for low stock */
+  font-weight: bold; /* Bold text */
+font-style: inherit;
+}
+
+.stock-out {
+  color: red; /* Red color for out-of-stock items */
+  font-weight: bold; /* Bold text */
+}

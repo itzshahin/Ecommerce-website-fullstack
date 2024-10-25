@@ -1,0 +1,134 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  
+  .product-details-wrapper {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ff0000; 
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .product-images-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .thumbnail-images-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .thumbnail-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s;
+  }
+  
+  .thumbnail-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .product-info-wrapper {
+    color: #ececec;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .product-info-wrapper h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .product-info-wrapper p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  
+  .product-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  .add-to-cart-btn,
+  .buy-now-btn {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .add-to-cart-btn:hover,
+  .buy-now-btn:hover {
+    background-color: #e64a19; 
+  }
+  
+  .size-options-wrapper {
+    margin-top: 20px;
+  }
+  
+  .size-option-btn {
+    background-color: #f0f0f0;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .size-option-btn:hover {
+    background-color: #d0d0d0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .product-images-wrapper {
+    position: relative;
+  }
+  
+  .image-container {
+    overflow: hidden;
+  }
+  
+  .main-product-image {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: auto; 
+  }
+  
+  .image-container:hover .main-product-image {
+    transform: scale(1.2); 
+    cursor: pointer; 
+  }
+  
